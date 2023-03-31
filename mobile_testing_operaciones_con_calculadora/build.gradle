@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.3.4"
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+group 'com.inconcert'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {url 'https://jitpack.io'}
+}
+
+wrapper {
+    gradleVersion '6.5'
+    distributionType Wrapper.DistributionType.ALL
+}
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+dependencies {
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+
+    implementation "net.serenity-bdd:serenity-cucumber:3.2.4"
+
+    implementation group: 'io.appium', name: 'java-client', version: '6.0.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.2.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '3.2.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.2.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.2.4'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+
+}
+
+test {
+    useJUnit()
+}
+
+test.finalizedBy(aggregate)

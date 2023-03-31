@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Realizar operaciónes" skipped="0" tests="4" time="111.05" timestamp="2023-03-31 04:51:26"><testcase name="Realizar operaciones de enteros"><failure message="&#13;&#10;Expected: a string containing &quot;14&quot;&#13;&#10;     but: was &quot;15&quot;" type="java.lang.AssertionError">&#13;
+Expected: a string containing "14"&#13;
+     but: was "15"</failure><system-err>&#13;
+Expected: a string containing "14"&#13;
+     but: was "15"&#13;
+com.test.stepdefinition.OperacionesStepDefinitions.elUsuarioDeberaVerEl(OperacionesStepDefinitions.java:106)&#13;
+✽.el usuario debera ver el 14(file:///C:/Users/Miguel-PC/Desktop/SofkaTraining/Automatización/10.%20Appium/mobile_testing_operaciones_con_calculadora/src/test/resources/features/operaciones.feature:6)&#13;
+</system-err></testcase></testsuite>

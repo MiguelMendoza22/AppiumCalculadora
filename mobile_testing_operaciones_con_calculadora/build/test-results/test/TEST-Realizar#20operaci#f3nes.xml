@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Realizar operaciónes" tests="4" skipped="0" failures="1" errors="0" timestamp="2023-03-31T21:51:26" hostname="LAPTOP-LC3UNGF6" time="111.357">
+  <properties/>
+  <testcase name="Realizar operaciones de enteros #1" classname="Realizar operaciónes" time="33.926"/>
+  <testcase name="Realizar operaciones de enteros #2" classname="Realizar operaciónes" time="32.43"/>
+  <testcase name="Realizar operaciones de enteros #3" classname="Realizar operaciónes" time="19.551"/>
+  <testcase name="Realizar operaciones de enteros #4" classname="Realizar operaciónes" time="25.45">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: a string containing &quot;14&quot;&#13;&#10;     but: was &quot;15&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: a string containing &quot;14&quot;
+     but: was &quot;15&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:377)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:349)
+	at com.test.stepdefinition.OperacionesStepDefinitions.elUsuarioDeberaVerEl(OperacionesStepDefinitions.java:106)
+	at ✽.el usuario debera ver el 14(file:///C:/Users/Miguel-PC/Desktop/SofkaTraining/Automatización/10.%20Appium/mobile_testing_operaciones_con_calculadora/src/test/resources/features/operaciones.feature:6)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2023-03-31 16:51:26 INFO  OperacionesStepDefinitions:33 INICIA LA AUTOMATIZACION
+2023-03-31 16:51:58 INFO  OperacionesStepDefinitions:109 CUMPLE
+2023-03-31 16:52:00 INFO  OperacionesStepDefinitions:33 INICIA LA AUTOMATIZACION
+2023-03-31 16:52:31 INFO  OperacionesStepDefinitions:109 CUMPLE
+2023-03-31 16:52:32 INFO  OperacionesStepDefinitions:33 INICIA LA AUTOMATIZACION
+2023-03-31 16:52:50 INFO  OperacionesStepDefinitions:109 CUMPLE
+2023-03-31 16:52:52 INFO  OperacionesStepDefinitions:33 INICIA LA AUTOMATIZACION
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
